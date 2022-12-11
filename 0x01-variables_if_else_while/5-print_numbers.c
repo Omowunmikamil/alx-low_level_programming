@@ -14,7 +14,7 @@ int main(void)
 	int x = 0;
 
 	for (x = 0; x < 10; x++)
-		pintf("%d", x);
+		printf("%d", x);
 	putchar('\n');
 	return (0);
 }
