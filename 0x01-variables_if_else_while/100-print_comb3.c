@@ -16,7 +16,7 @@ int main(void)
 
 	for (p = '0'; p <= '9'; p++)
 	{
-		for (c = x + '1'; c <= '9'; c++)
+		for (c = p + '1'; c <= '9'; c++)
 		{
 			putchar('0' + p);
 			putchar('0' + c);
