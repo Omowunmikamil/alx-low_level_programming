@@ -14,7 +14,7 @@ int main(void)
 	for (x = 0; x < 50; x++)
 	{
 		k = i + j;
-		if (n == 0)
+		if (x == 0)
 		{
 			printf("%ld", k);
 		}
