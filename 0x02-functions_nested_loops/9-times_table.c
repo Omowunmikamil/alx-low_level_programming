@@ -9,35 +9,30 @@
 
 void times_table(void)
 {
-	int f, g, h, i, j;
+	int a, b, c;
 
-	h = 0;
-
-	for (f = 0; f < 9; f++)
+	for (a = 0; a < 10; a++)
 	{
-		for (g = 0; g <= 9; g++)
+		for (b = 0; b <= 10; b++)
 		{
-			h = f * g;
-			if (g > 0)
+			c = a * b;
+			if (b == 0)
+			{
+				_putchar('0' + c);
+			}
+			else if (c >= 10 && b != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (h >= 10 && h < 100)
-				{
-					i = h / 10;
-					j = h % 10;
-					_putchar('0' + i);
-					_putchar('0' + j);
-				}
-				else if (h < 10)
-				{
-					_putchar(' ');
-					_putchar('0' + h);
-				}
+				_putchar(' ');
+				_putchar('0' + c);
 			}
-			else
+			else if (c >= 10)
 			{
-				_putchar(h + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (c / 10));
+				_putchar('0' + (c % 10));
 			}
 		}
 	_putchar('\n');
