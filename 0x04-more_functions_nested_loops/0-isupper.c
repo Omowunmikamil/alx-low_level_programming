@@ -3,15 +3,14 @@
 
 /**
  * _isupper - checks for uppercase character
- * Description: check the cade for a digit
+ * Description: checks the code for uppercase character
  * @c: character to be checked
- * Return: 1 if c is uppercase, otherwise return 0
+ * Return: 1 if c is uppercase, else return 0
 */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-
-	if (c >= 'A' && c <= 'Z')I
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
