@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * more_numbers - prints numbers
@@ -8,16 +7,15 @@
 
 void more_numbers(void)
 {
-	char a:
-	int b;
+	int a, b;
 
-	for (b = 1; b <= 10; b++)
+	for (a = 1; a <= 10; a++)
 	{
-		for (a = 0; a <= 14; a++)
+		for (b = 0; b <= 14; b++)
 		{
-			if (a / 10 > 0)
-				_putchar(((a / 10) + '0');
-				_putchar((a % 10) + '0');
+			if (b >= 10)
+			_putchar('1');
+			_putchar(b % 10) + '0');
 		}
 		_putchar('\n');
 	}
