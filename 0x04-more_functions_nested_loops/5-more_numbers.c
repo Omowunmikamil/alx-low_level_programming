@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * more_numbers - prints numbers
@@ -7,7 +8,8 @@
 
 void more_numbers(void)
 {
-	int a, b;
+	char a:
+	int b;
 
 	for (b = 1; b <= 10; b++)
 	{
