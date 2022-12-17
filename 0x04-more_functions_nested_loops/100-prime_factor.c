@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - prime factors
@@ -10,7 +9,8 @@
 
 int main(void)
 {
-	unsigned long x = 2, y = 612852475143;
+	unsigned long y = 612852475143;
+	unsigned long x = 2;
 
 	while (x < y)
 	{
