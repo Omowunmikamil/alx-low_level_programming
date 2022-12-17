@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - prime factors
@@ -9,21 +10,31 @@
 
 int main(void)
 {
-	unsigned long y = 612852475143;
-	unsigned long x = 2;
+	long int n = 612852475143;
+	long int prime = -1;
+	long int x;
 
-	while (x < y)
+	while (n % 2 == 0)
 	{
-		if (y % x == 0)
+		prime = 2;
+		n /= 2;
+	}
+
+	for (x = 3; x <= sqrt(n); x = x + 2)
+	{
+		while (n % x == 0)
 		{
-			y /= x;
-			x = 2;
-		}
-		else
-		{
-			x++;
+			prime = x;
+			n = n / x;
 		}
 	}
-	printf("%lu\n", num);
+
+	if (n > 2)
+	{
+		prime = n;
+	}
+
+	printf("%lu\n", prime);
+
 	return (0);
 }
