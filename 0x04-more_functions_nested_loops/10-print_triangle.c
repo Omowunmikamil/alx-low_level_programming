@@ -13,11 +13,11 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int x, y;
+		int x, y, z;
 
 		for (x = 1; x <= size; x++)
 		{
-			for (y = x; y <= size; y++)
+			for (z = x; z <= size; z++)
 			{
 				_putchar(' ');
 			}
