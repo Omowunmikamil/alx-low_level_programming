@@ -27,7 +27,7 @@ int _atoi(char *s)
 		else if (*s < '0' || *s > '9')
 		{
 			if (z)
-				breake;
+				break;
 		}
 		s++;
 	}
