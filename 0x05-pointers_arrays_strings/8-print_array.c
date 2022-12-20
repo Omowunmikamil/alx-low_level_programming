@@ -3,9 +3,9 @@
 
 /**
  * print_array -  prints n elements of an array of integers
- * @a: the array of the integar
- * @n: the num of elements to be printed
- * REturn: 0
+ * @a: the arrey to be printed
+ * @n: the num to be printed
+ * Return: 0
 */
 
 void print_array(int *a, int n)
@@ -20,9 +20,8 @@ void print_array(int *a, int n)
 		}
 		else
 		{
-			printf(",  %d", a[x]);
+			printf(", %d", a[x]);
 		}
-		printf("\n");
 	}
+	printf("\n");
 }
-
