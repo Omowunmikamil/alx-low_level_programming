@@ -15,7 +15,7 @@ int _atoi(char *s)
 
 	while (*s)
 	{
-		if (*s == '_')
+		if (*s == '-')
 		{
 			g = g * -1;
 		}
