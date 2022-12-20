@@ -3,6 +3,7 @@
 /**
  * rev_string - reverses a string
  * @s: the argument to be reversed
+ * Return: 0
 */
 
 void rev_string(char *s)
@@ -19,6 +20,6 @@ void rev_string(char *s)
 	{
 		x = s[j];
 		s[j] = s[k];
-		s[j] = x;
+		s[k] = x;
 	}
 }
