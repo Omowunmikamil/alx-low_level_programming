@@ -9,21 +9,43 @@
 
 void print_buffer(char *b, int size)
 {
-	int x;
+	int byte, buff;
 
-	for (x = 0; x <= (size - 1) / 10 && size; x++)
+	for (byte = 0; byte < size; byte += 10)
 	{
-		printf("%08x: ", x * 10);
-		if (x < size / 10)
+		printf("%08x: ", byte);
+
+		for (buff = 0; buff < 10; buff++)
 		{
-			print_line(b, 9, x);
+			if ((buff + byte) >= size)
+				printf("  ");
+
+			else
+				printf("%02x", *(b + buff + byte));
+
+			if ((buff % 2) != 0 && buff != 0)
+				printf(" ");
 		}
-		else
+
+		for (buff = 0; buff < 10; buff++)
 		{
-			print_line(b, size % 10 - 1, x;
+			if ((buff + byte) >= size)
+				break;
+
+			else if (*(b + buff + byte) >= 31 && *(b + buff + byte) <= 126)
+				printf("%c", *(b + buff + byte));
+
+			else
+				printf(".");
 		}
-		putchar('\n');
+
+		if (byte >= size)
+			continue;
+
+		printf("\n");
 	}
-	if (size == 0)
-	putchar('\n');
+
+	if (size <= 0)
+		printf("\n");
+
 }
