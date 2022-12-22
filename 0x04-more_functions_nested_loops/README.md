@@ -1,4 +1,4 @@
-				# 0x04. C - More functions, more nested loops #
+			# 0x04. C - More functions, more nested loops #
 
 /Focus  - What are nested loops and how to use them.
 	- What is a function and how do you use functions.
@@ -25,7 +25,7 @@
 - A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files. There are two types of header files: the files that the programmer writes and the files that comes with your compiler.
 
 
-				# Tools and Requirements #
+			# Tools and Requirements #
 
 - Allowed editors: vi, vim, emacs.
 
