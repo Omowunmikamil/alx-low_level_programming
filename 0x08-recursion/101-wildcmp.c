@@ -1,4 +1,4 @@
-#include "msin.h"
+#include "main.h"
 
 /**
  * str_checker - check if strings are identical
