@@ -1,42 +1,43 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
- * @n: string 2 bytes to add to string 1
- * Return: new string followed by the first @n bytes of s2, else NULL
+ * @n: number of bytes to be included in @s2
+ * Return: newly allocated space in memory, NUll if function fails
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int a, b, d, f, i, len;
+	unsigned int i = 0, j = 0, x, y, z = 0;
+	unsigned int len;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	while (s1[a])
-		a++;
-	while (s2[b])
-		b++;
-	if (b > n)
-		b = n;
+	while (s1[i])
+		i++;
+	while (s2[j])
+		j++;
+	if (j > n)
+		j = n;
 
-	len = a + b;
+	len = i + j;
 
 	ptr = malloc(sizeof(char) * (len + 1));
-	if (ptr == NULL)
+	if (ptr == Null)
 		return (NULL);
 
-	for (f = 0; f < a; f++)
-		ptr[i++] = s1[f];
-	for (d = 0; d < b; d++)
-		ptr[i++] = s2[m];
+	for (y = 0; y < i; y++)
+		ptr[z++] = s1[y];
+	for (x = 0; x < j; x++)
+		ptr[z++] = s2[x];
 
-	ptr[i] = '\0';
+	ptr[z] = '\0';
 	return (ptr);
 }
