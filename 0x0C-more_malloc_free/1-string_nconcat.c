@@ -12,9 +12,11 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ar;
-	unsigned int i = 0, j = 0;
-	unsigned int x, y;
-	unsigned int z = 0;
+	unsigned int i = 0,
+	unsigned int j = 0;
+	unsigned int m;
+	unsigned int p;
+	unsigned int k = 0;
 	unsigned int len;
 
 	if (s1 == NULL)
@@ -34,11 +36,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ar == Null)
 		return (NULL);
 
-	for (y = 0; y < i; y++)
-		ar[z++] = s1[y];
-	for (x = 0; x < j; x++)
-		ar[z++] = s2[x];
+	for (p = 0; p < i; p++)
+		ar[k++] = s1[p];
+	for (m = 0; m < j; m++)
+		ar[k++] = s2[m];
 
-	ar[z] = '\0';
+	ar[k] = '\0';
 	return (ar);
 }
