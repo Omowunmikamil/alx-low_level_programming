@@ -2,24 +2,21 @@
 
 /**
  * sum_them_all - returns the sum of all its parameters
- * @n: num s of arguments passed through
- * Return: the sum of all parameters
+ * @n: num s of arguments passed
+ * Return: the sum of parameters
 */
 
 int sum_them_all(const unsigned int n, ...);
 {
-	va_list valist;
-	unsigned int sum = 0, i;
+	va_list list;
+	unsigned int sum = 0, param;
 
-	if (n == 0)
-		return (0);
+	va_start(list, n);
 
-	va_start(valist, n);
+	for (param = 0; param < n; param++)
+		sum += va_arg(list, int);
 
-	for (i = 0; i < n; i++)
-		sum += va_arg(valist, int);
-
-	va_end(valist);
+	va_end(list);
 
 	return (sum);
 }
