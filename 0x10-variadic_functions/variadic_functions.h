@@ -6,7 +6,7 @@
 
 /**
  * struct check - parameters checker
- * @c: type
+ * @chk: type
  * @f: recieving function
 */
 typedef struct check
