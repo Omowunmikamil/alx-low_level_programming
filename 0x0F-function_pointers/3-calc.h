@@ -1,7 +1,5 @@
-#ifndef _CALC_H_
-#define _CALC_H_
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef _CALC_H
+#define _CALC_H
 
 /**
  * struck op - struck op
