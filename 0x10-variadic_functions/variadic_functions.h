@@ -5,15 +5,15 @@
 #include <stdarg.h>
 
 /**
- * struck check - parameters checker
+ * check_t - parameters checker
  * @c: type
  * @f: recieving function
 */
-typeof struct check
+typeof struct check_t(char *c, int *f)
 {
 	char *chk;
 	void (*f)(va_list list);
-} check_t;
+}
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
