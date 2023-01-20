@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <string.h>
+#include <stddef.h>
 
 /**
  * get_op_func - select the valid function to pass
@@ -21,10 +21,9 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 10)
 	{
-		if (s[0] == ops->op[i])
-			break;
+		if (*s == *ops[i].op)
+			return (ops[i].f);
 		i++;
 	}
-
-	return (ops[i / 2].f);
+	return (NULL);
 }
