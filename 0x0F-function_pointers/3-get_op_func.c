@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include <stddef.h>
 
 /**
  * get_op_func - select the valid function to pass
