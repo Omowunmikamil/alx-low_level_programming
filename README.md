@@ -5,7 +5,7 @@ This repo contains the ALX task directories for alx-low_level_programming for th
 I'm more than excited to be a part of the SE program, where I'm doing "Hard Things!".
 
 
-#  Let's link up by clicking the links below!
+  Let's link up by clicking the links below!
 |--------------------------------------------------------|
   Email: balikiskamil@gmail.com
 |--------------------------------------------------------|
