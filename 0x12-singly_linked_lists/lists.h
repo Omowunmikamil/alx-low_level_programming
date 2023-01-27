@@ -1,13 +1,16 @@
 #ifndef LISTS_H
 #define LISTS_H
-#include <stddef.h>
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
- * struct list_s - linked list
+ * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next mode
- * Description: single linked list node struckture
+ * Description: singly linked list node struckture
 */
 typeof struct list_s
 {
