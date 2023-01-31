@@ -50,7 +50,7 @@ size_t free_listint_safe(listint_t **head)
 				return (num);
 			}
 		}
-		num++
+		num++;
 		list = _ra(list, num, *head);
 		next = (*head)->next;
 		free(*head);
