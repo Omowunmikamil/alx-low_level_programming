@@ -24,13 +24,11 @@ int main(int argc, char *argv[])
 	}
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while ((rd = read(file_from, buff, BUFSIZ)) > 0)
-	{
 		if (file_to == -1 || (write(file_to, buff, rd) != rd))
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-	}
 	if (rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
