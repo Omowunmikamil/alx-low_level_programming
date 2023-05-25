@@ -1,5 +1,7 @@
 <h1>0x1C. C - Makefiles</h1>
-<h4>C</h4>
+<h3>C</h3>
+
+![giphy-2](https://github.com/Omowunmijuin/alx-low_level_programming/assets/109985883/a40ad187-09c9-4d27-9433-54a78f5fa890)
 
 This directory contains files created in response to tasks set forth in Holberton student project "0x1C. C - Makefiles". These scripts demonstrate an introduction to Makefiles.
 
